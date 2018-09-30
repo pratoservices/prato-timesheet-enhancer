@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+
+  "name": "Prato timesheets",
+  "description": "Improving timesheets app using a userscript",
+  "version": "1.0.0",
+  "homepage_url":"https://github.com/pratoservices/prato-timesheet-enhancer",
+  "author": "Prato",
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://timesheets.scapta365.com/*/prato/Registration/WeekOverview/"],
+      "css": ["prato-timesheet-enhancer.css"]
+    }
+  ],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://raw.githubusercontent.com/pratoservices/prato-timesheet-enhancer/master/LICENSE"
+    }
+  ]
+}

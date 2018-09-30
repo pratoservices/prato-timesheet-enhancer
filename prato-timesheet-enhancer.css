@@ -1,0 +1,99 @@
+body {
+  font-family: Roboto,Helvetica,Arial,sans-serif;
+  color: gray !important;
+  background-color: white !important;
+
+}
+
+h1 {
+  font-size: 25px;
+  font-weight: normal;
+}
+
+footer {
+  display:none;
+}
+
+.scapta_cal_week {
+  bottom:0 !important;
+  background-color: white !important;
+  color: gray !important;
+  height:initial !important;
+}
+
+.scapta_cal_week_day {
+  background-image: linear-gradient(to bottom, rgba(255,255,255,0.8) 0%,rgba(255,255,255,0.8) 100%), url(/images/CalBackground.png) !important;
+}
+
+.scapta_cal_week_day.not_working {
+  background-image: linear-gradient(to bottom, rgba(255,255,255,0.8) 0%,rgba(255,255,255,0.8) 100%), url(/images/CalBackground_Dark.png) !important;
+}
+
+.cal_body {
+  border-top: 1px solid #cecece;
+}
+
+.glyphicon {
+  opacity: 0.6;
+}
+
+#WorkType_Code {
+  border-color:red;
+}
+
+#RegisterdHours {
+  margin-top: 25px;
+}
+
+.cal_item {
+  padding-left: 3px;
+  border-radius: 2px;
+}
+
+.cal_item.body {
+  width: calc(100% - 9px);
+}
+
+.navbar-inverse .navbar-brand, 
+.navbar-inverse .navbar-nav>li>a, 
+.navbar-inverse .navbar-link {
+  color:white;
+}
+
+.navbar-inverse .navbar-brand:hover, 
+.navbar-inverse .navbar-nav>li>a:hover, 
+.navbar-inverse .navbar-link:hover {
+  background-color: #20a45f;
+}
+
+.navbar-inverse {
+  background-color:#25C16F;
+}
+
+.navbar-btn {
+  margin:0px;
+  height:50px;
+}
+
+.navbar-btn:hover {
+  text-decoration:none;
+}
+
+.navbar-inverse {
+  border-color:#25C16F
+}
+
+/*Mooiere kleuren voor categoriën */
+.cal_item.custom_IPCREATION_nietfact > .cal_item.title, 
+.cal_item.custom_IPCREATION_nietfact {
+  border: #25C16F;background-color: #25C16F;
+}
+
+.cal_item.custom_Not_Available > .cal_item.title, 
+.cal_item.custom_Not_Available {
+  border: gray;background-color: gray;
+}
+.cal_item.custom_Non_bill_niet_fact > .cal_item.title, 
+.cal_item.custom_Non_bill_niet_fact {
+  border: #D64541;background-color: #D64541;
+}
